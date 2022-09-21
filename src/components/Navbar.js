@@ -21,19 +21,19 @@ export default function Navbar() {
 				<div>
 					<div className='flex justify-around pr-5'>
 						<ul className='hidden md:flex pr-3 text-white font-semibold'>
-							<Link to='/WhoWeAre'>
+							<Link to='/whoweare'>
 								<li className='hover:bg-gray-600'>Who We Are</li>
 							</Link>
-							<Link to='/WhatWeDo'>
+							<Link to='/whatwedo'>
 								<li className='hover:bg-gray-600'>What We Do</li>
 							</Link>
-							<Link to='/Methodology'>
+							<Link to='/methodology'>
 								<li className='hover:bg-gray-600'>Methodology</li>
 							</Link>
-							<Link to='/Portfolio'>
+							<Link to='/portfolio'>
 								<li className='hover:bg-gray-600'>Digital Learning Portfolio</li>
 							</Link>
-							<Link to='/TalkToUs'>
+							<Link to='/talktous'>
 								<li className='hover:bg-gray-600'>Talk to Us</li>
 							</Link>
 						</ul>
