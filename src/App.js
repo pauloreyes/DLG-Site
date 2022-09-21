@@ -15,8 +15,8 @@ function App() {
 				<ContextProvider>
 					<Routes>
 						<Route exact path='/' element={<Main />} />
-						<Route exact path='/WhoWeAre' element={<WhoWeAre />} />
-						<Route exact path='/TalkToUs' element={<TalkToUs />} />
+						<Route path='/whoweare' element={<WhoWeAre />} />
+						<Route path='/talktous' element={<TalkToUs />} />
 						<Route path='*' element={<PageNotFound />} />
 					</Routes>
 				</ContextProvider>
