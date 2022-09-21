@@ -1,18 +1,28 @@
-import React from "react";
-import VRBG from "../assets/VR-bg.jpg";
+import React, { useContext } from "react";
+import AnimatedOpen from "./AnimatedOpen";
+import VRBG from "../assets/VR-bg.png";
+import SiteContexts from "./SiteContexts";
+import Navbar from "./Navbar";
 
 export default function Main() {
+	const { animation } = useContext(SiteContexts);
+
 	return (
-		<div
-			style={{
-				backgroundImage: `url(${VRBG})`,
-				backgroundPosition: "center",
-				backgroundSize: "cover",
-				backgroundRepeat: "no-repeat",
-				width: "100vw",
-				height: "100vh",
-				filter: "brightness(30%)",
-			}}
-		></div>
+		<div>
+			<Navbar />
+			<div
+				style={{
+					backgroundImage: `url(${VRBG})`,
+					backgroundPosition: "center",
+					backgroundSize: "cover",
+					backgroundRepeat: "no-repeat",
+					width: "100vw",
+					height: "100vh",
+					maxWidth: "100%",
+				}}
+			>
+				{animation && <AnimatedOpen />}
+			</div>
+		</div>
 	);
 }
