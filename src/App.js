@@ -18,6 +18,7 @@ function App() {
 						<Route path='/whoweare' element={<WhoWeAre />} />
 						<Route path='/talktous' element={<TalkToUs />} />
 						<Route path='*' element={<PageNotFound />} />
+						<Route path='/test' element={<Test />} />
 					</Routes>
 				</ContextProvider>
 			</Router>

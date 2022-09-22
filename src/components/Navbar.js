@@ -2,7 +2,6 @@ import React from "react";
 import { Bars3Icon } from "@heroicons/react/20/solid";
 import SuthLogo from "../assets/Sutherland_R_Logo_Horiz_WHT.png";
 import { Link } from "react-router-dom";
-import MenuDrop from "./MenuDrop";
 
 export default function Navbar() {
 	return (
@@ -21,7 +20,7 @@ export default function Navbar() {
 				</div>
 				<div>
 					<div className='flex justify-around pr-5'>
-						<ul className='hidden md:flex pr-3 text-white font-light'>
+						<ul className='hidden md:flex pr-3 text-white font-light md:text-[10px] lg:text-base'>
 							<Link to='/whoweare'>
 								<li className='hover:bg-gray-600'>Who We Are</li>
 							</Link>
@@ -39,7 +38,6 @@ export default function Navbar() {
 							</Link>
 						</ul>
 						<Bars3Icon className='w-10 text-white' />
-						{/* <MenuDrop /> */}
 					</div>
 				</div>
 			</div>
