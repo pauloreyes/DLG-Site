@@ -9,7 +9,7 @@ export default function PageNotFound() {
 					<div class='absolute'>
 						<div class=''>
 							<h1 class='my-2 text-[#c5c7c5] font-bold text-2xl'>
-								Sorry! That page does not exist.
+								Sorry! Paulo has not built that page yet.
 							</h1>
 							<p class='my-2 text-[#c5c7c5]'>
 								Please visit our homepage to get to where you need to go.

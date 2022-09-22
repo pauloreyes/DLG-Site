@@ -2,7 +2,6 @@ import * as React from "react";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import { Bars3Icon } from "@heroicons/react/20/solid";
 
 export default function BasicMenu() {
 	const [anchorEl, setAnchorEl] = React.useState(null);
@@ -23,7 +22,7 @@ export default function BasicMenu() {
 				aria-expanded={open ? "true" : undefined}
 				onClick={handleClick}
 			>
-				<Bars3Icon className='w-10 text-black' />
+				Dashboard
 			</Button>
 			<Menu
 				id='basic-menu'

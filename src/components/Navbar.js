@@ -2,8 +2,20 @@ import React from "react";
 import { Bars3Icon } from "@heroicons/react/20/solid";
 import SuthLogo from "../assets/Sutherland_R_Logo_Horiz_WHT.png";
 import { Link } from "react-router-dom";
+import Button from "@mui/material/Button";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
 
 export default function Navbar() {
+	const [anchorEl, setAnchorEl] = React.useState(null);
+	const open = Boolean(anchorEl);
+	const handleClick = (event) => {
+		setAnchorEl(event.currentTarget);
+	};
+	const handleClose = () => {
+		setAnchorEl(null);
+	};
+
 	return (
 		<div className='w-screen h-[80px] z-10 bg-transparent fixed'>
 			<div className='px-2 flex justify-between items-center w-full h-full'>
@@ -37,7 +49,101 @@ export default function Navbar() {
 								<li className='hover:bg-gray-600'>Talk to Us</li>
 							</Link>
 						</ul>
-						<Bars3Icon className='w-10 text-white' />
+
+						<div>
+							<Button
+								id='basic-button'
+								aria-controls={open ? "basic-menu" : undefined}
+								aria-haspopup='true'
+								aria-expanded={open ? "true" : undefined}
+								onClick={handleClick}
+							>
+								<Bars3Icon className='w-10 text-white' />
+							</Button>
+
+							<Menu
+								id='basic-menu'
+								anchorEl={anchorEl}
+								open={open}
+								onClose={handleClose}
+								MenuListProps={{
+									"aria-labelledby": "basic-button",
+								}}
+							>
+								<MenuItem onClick={handleClose}>
+									<Link
+										to='/whoweare'
+										className='hover:text-[#26235d] hover:font-semibold'
+									>
+										Who We Are
+									</Link>
+								</MenuItem>
+								<MenuItem onClick={handleClose}>
+									<Link
+										to='/whatwedo'
+										className='hover:text-[#26235d] hover:font-semibold'
+									>
+										What We Do
+									</Link>
+								</MenuItem>
+								<MenuItem onClick={handleClose}>
+									<Link
+										to='/methodology'
+										className='hover:text-[#26235d] hover:font-semibold'
+									>
+										Methodology
+									</Link>
+								</MenuItem>
+								<MenuItem onClick={handleClose}>
+									<Link
+										to='/techsuite'
+										className='hover:text-[#26235d] hover:font-semibold'
+									>
+										Technology Suite
+									</Link>
+								</MenuItem>
+								<MenuItem onClick={handleClose}>
+									<Link
+										to='/laas'
+										className='hover:text-[#26235d] hover:font-semibold'
+									>
+										Service Offerings
+									</Link>
+								</MenuItem>
+								<MenuItem onClick={handleClose}>
+									<Link
+										to='/awardsandtestimonials'
+										className='hover:text-[#26235d] hover:font-semibold'
+									>
+										Awards and Testimonials
+									</Link>
+								</MenuItem>
+								<MenuItem onClick={handleClose}>
+									<Link
+										to='/portfolio'
+										className='hover:text-[#26235d] hover:font-semibold'
+									>
+										Digital Learning Portfolio
+									</Link>
+								</MenuItem>
+								<MenuItem onClick={handleClose}>
+									<Link
+										to='/casestudies'
+										className='hover:text-[#26235d] hover:font-semibold'
+									>
+										Case Studies
+									</Link>
+								</MenuItem>
+								<MenuItem onClick={handleClose}>
+									<Link
+										to='/talktous'
+										className='hover:text-[#26235d] hover:font-semibold'
+									>
+										Talk to Us
+									</Link>
+								</MenuItem>
+							</Menu>
+						</div>
 					</div>
 				</div>
 			</div>
