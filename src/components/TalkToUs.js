@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-import TalkToUsVideo from "../assets/TalkToUsVideo.mp4";
+import TalkToUsVideo from "../assets/DLGPrimerHD2.mp4";
 
 export default function TalkToUs() {
 	return (
@@ -8,8 +8,11 @@ export default function TalkToUs() {
 			<Navbar />
 			<div className='flex items-center justify-center h-screen'>
 				<div className='w-[90%] flex items-center  flex-col md:flex-row mt-5 md:w-[900px] md:h-[450px] bg-white rounded-lg text-[#26235d]'>
-					<div className='flex m-5 items-center justify-center md:w-[65%] '>
-						<video autoPlay controls muted controlsList='nodownload' width='100%'>
+					<div
+						className='flex m-5 items-center justify-center md:w-[65%] p-1 rounded'
+						style={{ border: "1px solid #c5c7c5" }}
+					>
+						<video autoPlay loop controls muted controlsList='nodownload' width='100%'>
 							<source src={TalkToUsVideo} type='video/webm' />
 							Sorry, your browser doesn't support videos.
 						</video>
