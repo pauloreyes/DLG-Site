@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import Navbar from "./Navbar";
 import SiteContexts from "./SiteContexts";
 import OurPhilosophy from "./Modals/OurPhilosophy";
