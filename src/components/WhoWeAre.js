@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import Navbar from "./Navbar";
+import SiteContexts from "./SiteContexts";
+import OurPhilosophy from "./Modals/OurPhilosophy";
+import OurCapability from "./Modals/OurCapability";
 
 export default function WhoWeAre() {
+	const { openModal1, handleModal1, openModal2, handleModal2 } = useContext(SiteContexts);
+
 	return (
 		<div>
+			{openModal1 && <OurPhilosophy />}
+			{openModal2 && <OurCapability />}
 			<Navbar />
 			<div className='bg-[#26235d] h-screen pt-24 px-5 md:pt-20'>
-				<div
-					className='h-[500px] flex justify-center items-center px-2 md:p-5 flex-wrap'
-					// style={{ border: "1px solid white" }}
-				>
+				<div className='h-[500px] flex justify-center items-center px-2 md:p-5 flex-wrap'>
 					<div className='md:m-5 w-full flex flex-col md:flex-row flex-wrap'>
-						<div className='text-white md:w-[550px] md:m-2 '>
+						<div className='text-white md:w-[550px] md:m-2 md:pl-10'>
 							<div className='text-xl md:text-3xl pb-2'>Who We Are</div>
 							<div className='text-xs md:text-base'>
 								Our training solutions are backed by experience, knowledge,
@@ -22,7 +26,10 @@ export default function WhoWeAre() {
 							</div>
 						</div>
 						<div className='md:w-[500px] flex flex-col md:flex-row flex-wrap justify-center items-center m-2 grow md:gap-8'>
-							<div className='text-black m-2 w-[200px] h-[200px] bg-white rounded-md drop-shadow-md'>
+							<div
+								className='text-black m-2 w-[200px] h-[200px] bg-white rounded-md drop-shadow-md hover:cursor-pointer'
+								onClick={handleModal1}
+							>
 								<div>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
@@ -43,7 +50,10 @@ export default function WhoWeAre() {
 									</div>
 								</div>
 							</div>
-							<div className='text-black m-2 w-[200px] h-[200px]  bg-white rounded-md drop-shadow-md '>
+							<div
+								className='text-black m-2 w-[200px] h-[200px]  bg-white rounded-md drop-shadow-md hover:cursor-pointer'
+								onClick={handleModal2}
+							>
 								<div>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
