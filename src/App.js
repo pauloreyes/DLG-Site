@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./index.css";
-import "./App.css";
 import Main from "./components/Main";
 import { ContextProvider } from "./components/SiteContexts";
 import PageNotFound from "./components/PageNotFound";

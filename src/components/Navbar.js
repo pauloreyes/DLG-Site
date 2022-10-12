@@ -31,7 +31,7 @@ export default function Navbar() {
 					</h1>
 				</div>
 				<div>
-					<div className='flex justify-around pr-5'>
+					<div className='flex justify-around pr-0 mr-0 md:mr-5'>
 						<ul className='hidden md:flex pr-3 text-white font-light md:text-[10px] lg:text-base'>
 							<Link to='/whoweare'>
 								<li className='hover:bg-gray-600'>Who We Are</li>
@@ -69,11 +69,16 @@ export default function Navbar() {
 								MenuListProps={{
 									"aria-labelledby": "basic-button",
 								}}
+								PaperProps={{
+									style: {
+										width: 250,
+									},
+								}}
 							>
 								<MenuItem onClick={handleClose}>
 									<Link
 										to='/whoweare'
-										className='hover:text-[#26235d] hover:font-semibold'
+										className='hover:text-[#26235d] hover:font-semibold w-[100%]'
 									>
 										Who We Are
 									</Link>
@@ -81,7 +86,7 @@ export default function Navbar() {
 								<MenuItem onClick={handleClose}>
 									<Link
 										to='/whatwedo'
-										className='hover:text-[#26235d] hover:font-semibold'
+										className='hover:text-[#26235d] hover:font-semibold w-[100%]'
 									>
 										What We Do
 									</Link>
@@ -89,7 +94,7 @@ export default function Navbar() {
 								<MenuItem onClick={handleClose}>
 									<Link
 										to='/methodology'
-										className='hover:text-[#26235d] hover:font-semibold'
+										className='hover:text-[#26235d] hover:font-semibold w-[100%]'
 									>
 										Methodology
 									</Link>
@@ -97,7 +102,7 @@ export default function Navbar() {
 								<MenuItem onClick={handleClose}>
 									<Link
 										to='/techsuite'
-										className='hover:text-[#26235d] hover:font-semibold'
+										className='hover:text-[#26235d] hover:font-semibold w-[100%]'
 									>
 										Technology Suite
 									</Link>
@@ -105,7 +110,7 @@ export default function Navbar() {
 								<MenuItem onClick={handleClose}>
 									<Link
 										to='/laas'
-										className='hover:text-[#26235d] hover:font-semibold'
+										className='hover:text-[#26235d] hover:font-semibold w-[100%]'
 									>
 										Service Offerings
 									</Link>
@@ -113,7 +118,7 @@ export default function Navbar() {
 								<MenuItem onClick={handleClose}>
 									<Link
 										to='/awardsandtestimonials'
-										className='hover:text-[#26235d] hover:font-semibold'
+										className='hover:text-[#26235d] hover:font-semibold w-[100%]'
 									>
 										Awards and Testimonials
 									</Link>
@@ -121,7 +126,7 @@ export default function Navbar() {
 								<MenuItem onClick={handleClose}>
 									<Link
 										to='/portfolio'
-										className='hover:text-[#26235d] hover:font-semibold'
+										className='hover:text-[#26235d] hover:font-semibold w-[100%]'
 									>
 										Digital Learning Portfolio
 									</Link>
@@ -129,7 +134,7 @@ export default function Navbar() {
 								<MenuItem onClick={handleClose}>
 									<Link
 										to='/casestudies'
-										className='hover:text-[#26235d] hover:font-semibold'
+										className='hover:text-[#26235d] hover:font-semibold w-[100%]'
 									>
 										Case Studies
 									</Link>
@@ -137,7 +142,7 @@ export default function Navbar() {
 								<MenuItem onClick={handleClose}>
 									<Link
 										to='/talktous'
-										className='hover:text-[#26235d] hover:font-semibold'
+										className='hover:text-[#26235d] hover:font-semibold w-[100%]'
 									>
 										Talk to Us
 									</Link>
