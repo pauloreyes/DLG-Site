@@ -14,6 +14,22 @@
 	}
 }
 
-.text-suth-blue {
+/* .text-suth-blue {
 	color: #26235d;
+} */
+
+#backgroundWWA {
+	margin: 0;
+	background-image: url(./assets/BG-Team-Table.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+	#backgroundWWA {
+		margin: 0;
+		background-image: url(./assets/BG-Team-Table.jpg);
+		background-size: 450%;
+		background-repeat: no-repeat;
+	}
 }

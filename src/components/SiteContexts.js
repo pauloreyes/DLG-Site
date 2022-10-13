@@ -4,12 +4,12 @@ const SiteContexts = createContext();
 
 export function ContextProvider({ children }) {
 	const [animation, setAnimation] = useState(false);
-	const [openModal1, setOpenModal1] = useState(true);
+	const [openModal1, setOpenModal1] = useState(false);
 	const handleModal1 = () => {
 		setOpenModal1(!openModal1);
 	};
 
-	const [openModal2, setOpenModal2] = useState(true);
+	const [openModal2, setOpenModal2] = useState(false);
 	const handleModal2 = () => {
 		setOpenModal2(!openModal2);
 	};
