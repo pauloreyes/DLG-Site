@@ -25,6 +25,23 @@
 	background-repeat: no-repeat;
 }
 
+/* #backgroundTTU {
+	margin: 0;
+	background-image: url(./assets/BG-TalkToUs3.jpeg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+} */
+
+#backgroundTTU {
+	margin: 0;
+	background: linear-gradient(
+		147deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(9, 9, 121, 1) 46%,
+		rgba(204, 52, 86, 1) 100%
+	);
+}
+
 @media only screen and (max-width: 600px) {
 	#backgroundWWA {
 		margin: 0;
@@ -32,4 +49,11 @@
 		background-size: 450%;
 		background-repeat: no-repeat;
 	}
+
+	/* #backgroundTTU {
+		margin: 0;
+		background-image: url(./assets/BG-TalkToUs3.jpeg);
+		background-size: 450%;
+		background-repeat: no-repeat;
+	} */
 }

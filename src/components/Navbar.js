@@ -34,19 +34,21 @@ export default function Navbar() {
 					<div className='flex justify-around pr-0 mr-0 md:mr-5'>
 						<ul className='hidden md:flex pr-3 text-white font-light md:text-[10px] lg:text-base'>
 							<Link to='/whoweare'>
-								<li className='hover:bg-[#0000007e]'>Who We Are</li>
+								<li className='hover:bg-[#00000062] rounded-lg'>Who We Are</li>
 							</Link>
 							<Link to='/whatwedo'>
-								<li className='hover:bg-[#0000007e]'>What We Do</li>
+								<li className='hover:bg-[#00000062] rounded-lg'>What We Do</li>
 							</Link>
 							<Link to='/methodology'>
-								<li className='hover:bg-[#0000007e]'>Methodology</li>
+								<li className='hover:bg-[#00000062] rounded-lg'>Methodology</li>
 							</Link>
 							<Link to='/portfolio'>
-								<li className='hover:bg-[#0000007e]'>Digital Learning Portfolio</li>
+								<li className='hover:bg-[#00000062] rounded-lg'>
+									Digital Learning Portfolio
+								</li>
 							</Link>
 							<Link to='/talktous'>
-								<li className='hover:bg-[#0000007e]'>Talk to Us</li>
+								<li className='hover:bg-[#00000062] rounded-lg'>Talk to Us</li>
 							</Link>
 						</ul>
 
