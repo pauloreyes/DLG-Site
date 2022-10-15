@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Bars3Icon } from "@heroicons/react/20/solid";
 import SuthLogo from "../assets/Sutherland_R_Logo_Horiz_WHT.png";
 import { Link } from "react-router-dom";
@@ -34,21 +35,21 @@ export default function Navbar() {
 					<div className='flex justify-around pr-0 mr-0 md:mr-5'>
 						<ul className='hidden md:flex pr-3 text-white font-light md:text-[10px] lg:text-base'>
 							<Link to='/whoweare'>
-								<li className='hover:bg-[#00000062] rounded-lg'>Who We Are</li>
+								<motion.li whileHover={{ scale: 1.1 }}>Who We Are</motion.li>
 							</Link>
 							<Link to='/whatwedo'>
-								<li className='hover:bg-[#00000062] rounded-lg'>What We Do</li>
+								<motion.li whileHover={{ scale: 1.1 }}>What We Do</motion.li>
 							</Link>
 							<Link to='/methodology'>
-								<li className='hover:bg-[#00000062] rounded-lg'>Methodology</li>
+								<motion.li whileHover={{ scale: 1.1 }}>Methodology</motion.li>
 							</Link>
 							<Link to='/portfolio'>
-								<li className='hover:bg-[#00000062] rounded-lg'>
+								<motion.li whileHover={{ scale: 1.1 }}>
 									Digital Learning Portfolio
-								</li>
+								</motion.li>
 							</Link>
 							<Link to='/talktous'>
-								<li className='hover:bg-[#00000062] rounded-lg'>Talk to Us</li>
+								<motion.li whileHover={{ scale: 1.1 }}>Talk to Us</motion.li>
 							</Link>
 						</ul>
 

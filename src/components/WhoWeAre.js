@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { motion } from "framer-motion";
 import Navbar from "./Navbar";
 import SiteContexts from "./SiteContexts";
 import OurPhilosophy from "./Modals/OurPhilosophy";
@@ -17,19 +18,33 @@ export default function WhoWeAre() {
 				<div className='h-[500px] flex justify-center items-center px-2 md:p-5 flex-wrap'>
 					<div className='md:m-5 w-full flex flex-col md:flex-row flex-wrap'>
 						<div className='text-white md:w-[550px] md:m-2 md:pl-10'>
-							<div className='text-xl md:text-3xl pb-2'>Who We Are</div>
-							<div className='text-xs md:text-base'>
+							<motion.div
+								initial={{ x: -200 }}
+								animate={{ x: 0 }}
+								className='text-xl md:text-3xl pb-2'
+							>
+								Who We Are
+							</motion.div>
+							<motion.div
+								initial={{ x: -200 }}
+								animate={{ x: 0 }}
+								className='text-xs md:text-base'
+							>
 								Our training solutions are backed by experience, knowledge,
 								theories, and empirical study that help determine what best suit our
 								learners. We offer solutions that range from tried-and-tested
 								classroom content to highly engaging technology-enabled platforms
 								with a wide range of products to address your learning needs.
-							</div>
+							</motion.div>
 						</div>
 						<div className='md:w-[500px] flex flex-col md:flex-row flex-wrap justify-center items-center m-2 grow md:gap-8'>
-							<div
-								className='text-black m-2 w-[200px] h-[200px] bg-white hover:bg-[#26235d] hover:border-white hover:border-2 rounded-md drop-shadow-md hover:cursor-pointer'
+							<motion.div
+								className='text-black m-2 w-[200px] h-[200px] bg-white rounded-md drop-shadow-md hover:cursor-pointer'
 								onClick={handleModal1}
+								initial={{ opacity: 0, x: 50 }}
+								animate={{ opacity: 1, x: 0 }}
+								whileHover={{ scale: 1.1 }}
+								whileTap={{ scale: 1.1 }}
 							>
 								<div>
 									<svg
@@ -50,10 +65,14 @@ export default function WhoWeAre() {
 										OUR LEARNING PHILOSOPHY
 									</div>
 								</div>
-							</div>
-							<div
+							</motion.div>
+							<motion.div
 								className='text-black m-2 w-[200px] h-[200px]  bg-white rounded-md drop-shadow-md hover:cursor-pointer'
 								onClick={handleModal2}
+								initial={{ opacity: 0, x: 50 }}
+								animate={{ opacity: 1, x: 0 }}
+								whileHover={{ scale: 1.1 }}
+								whileTap={{ scale: 1.1 }}
 							>
 								<div>
 									<svg
@@ -74,7 +93,7 @@ export default function WhoWeAre() {
 										OUR CAPABILITY
 									</div>
 								</div>
-							</div>
+							</motion.div>
 						</div>
 					</div>
 				</div>
